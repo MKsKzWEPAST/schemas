@@ -1,0 +1,13 @@
+{
+    "title": "S1 Credential",
+    "description": "UUID holder credential",
+    "issuerName": "S1-Corp",
+    "titleTextColor": "#0C0A3E",
+    "descriptionTextColor": "#7B1E7A",
+    "issuerTextColor": "#0C0A3E",
+    "backgroundImageUrl": "https://raw.githubusercontent.com/MKsKzWEPAST/schemas/background.png",
+    "logo": {
+      "uri": "ipfs://QmWkSgmHbKRfhndWqHwVgfVpZSrWNiWZMTHb6k5KxY8ySc",
+      "alt": "Logo S1-Corp"
+    }
+  }
