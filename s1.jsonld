@@ -6,13 +6,13 @@
       "id": "@id",
       "type": "@type",
       "s1UUID": {
-        "@id": "https://raw.githubusercontent.com/MKsKzWEPAST/schemas/s1.jsonld#s1UUID",
+        "@id": "https://github.com/MKsKzWEPAST/schemas/blob/main/s1.jsonld#s1UUID",
         "@context": {
           "@version": 1.1,
           "@protected": true,
           "id": "@id",
           "type": "@type",
-          "vocab": "https://github.com/MKsKzWEPAST/schemas/s1-vocab.md#",
+          "vocab": "https://github.com/MKsKzWEPAST/schemas/blob/main/s1-vocab.md#",
           "xsd": "http://www.w3.org/2001/XMLSchema#",
           "uuid": {
             "@id": "vocab:uuid",

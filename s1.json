@@ -3,8 +3,8 @@
     "type": "object",
     "$metadata": {
       "uris": {
-        "jsonLdContext": "https://raw.githubusercontent.com/MKsKzWEPAST/schemas/s1.jsonld",
-        "jsonSchema": "https://raw.githubusercontent.com/MKsKzWEPAST/schemas/s1.json"
+        "jsonLdContext": "https://github.com/MKsKzWEPAST/schemas/blob/main/s1.jsonld",
+        "jsonSchema": "https://github.com/MKsKzWEPAST/schemas/blob/main/s1.json"
       }
     },
     "required": [
