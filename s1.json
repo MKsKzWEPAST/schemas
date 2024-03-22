@@ -1,123 +1,126 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "type": "object",
-    "$metadata": {
+  "$metadata": {
       "uris": {
-        "jsonLdContext": "https://raw.githubusercontent.com/MKsKzWEPAST/schemas/main/s1.jsonld",
-        "jsonSchema": "https://raw.githubusercontent.com/MKsKzWEPAST/schemas/main/s1.json"
-      }
-    },
-    "required": [
-      "@context",
-      "id",
-      "type",
-      "issuanceDate",
-      "credentialSubject",
-      "credentialSchema",
-      "credentialStatus",
-      "issuer"
-    ],
-    "properties": {
+          "jsonLdContext": "https://raw.githubusercontent.com/MKsKzWEPAST/schemas/main/s1.jsonld"
+      },
+      "version": "1.0",
+      "type": "s1UUID"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Credential to refer an external UUID.",
+  "title": "s1UUID",
+  "properties": {
+      "credentialSubject": {
+          "description": "Stores the data of the credential",
+          "title": "Credential subject",
+          "properties": {
+              "id": {
+                  "description": "Stores the DID of the subject that owns the credential",
+                  "title": "Credential subject ID",
+                  "format": "uri",
+                  "type": "string"
+              },
+              "uuid": {
+                  "description": "The uuid property refers to an external resource.",
+                  "title": "uuid",
+                  "type": "string"
+              }
+          },
+          "required": [
+              "uuid"
+          ],
+          "type": "object"
+      },
       "@context": {
-        "type": [
-          "string",
-          "array",
-          "object"
-        ]
-      },
-      "id": {
-        "type": "string"
-      },
-      "type": {
-        "type": [
-          "string",
-          "array"
-        ],
-        "items": {
-          "type": "string"
-        }
-      },
-      "issuer": {
-        "type": [
-          "string",
-          "object"
-        ],
-        "format": "uri",
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uri"
-          }
-        }
-      },
-      "issuanceDate": {
-        "type": "string",
-        "format": "date-time"
+          "type": [
+              "string",
+              "array",
+              "object"
+          ]
       },
       "expirationDate": {
-        "type": "string",
-        "format": "date-time"
+          "format": "date-time",
+          "type": "string"
+      },
+      "id": {
+          "type": "string"
+      },
+      "issuanceDate": {
+          "format": "date-time",
+          "type": "string"
+      },
+      "issuer": {
+          "type": [
+              "string",
+              "object"
+          ],
+          "format": "uri",
+          "properties": {
+              "id": {
+                  "format": "uri",
+                  "type": "string"
+              }
+          },
+          "required": [
+              "id"
+          ]
+      },
+      "type": {
+          "type": [
+              "string",
+              "array"
+          ],
+          "items": {
+              "type": "string"
+          }
       },
       "credentialSchema": {
-        "type": "object",
-        "required": [
-          "id",
-          "type"
-        ],
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uri"
+          "properties": {
+              "id": {
+                  "format": "uri",
+                  "type": "string"
+              },
+              "type": {
+                  "type": "string"
+              }
           },
-          "type": {
-            "type": "string"
-          }
-        }
+          "required": [
+              "id",
+              "type"
+          ],
+          "type": "object"
       },
-      "subjectPosition": {
-        "type": "string",
-        "enum": [
-          "none",
-          "index",
-          "value"
-        ]
-      },
-      "merklizationRootPosition": {
-        "type": "string",
-        "enum": [
-          "none",
-          "index",
-          "value"
-        ]
-      },
-      "revNonce": {
-        "type": "integer"
-      },
-      "version": {
-        "type": "integer"
-      },
-      "updatable": {
-        "type": "boolean"
-      },
-      "credentialSubject": {
-        "type": "object",
-        "required": [
-          "id",
-          "uuid"
-        ],
-        "properties": {
-          "id": {
-            "title": "Credential Subject ID",
-            "type": "string",
-            "format": "uri"
+      "credentialStatus": {
+          "description": "Allows the discovery of information about the current status of the credential, such as whether it is suspended or revoked.",
+          "title": "Credential Status",
+          "properties": {
+              "id": {
+                  "description": "Id URL of the credentialStatus.",
+                  "title": "Id",
+                  "format": "uri",
+                  "type": "string"
+              },
+              "type": {
+                  "description": "Expresses the credential status type (method). The value should provide enough information to determine the current status of the credential.",
+                  "title": "Type",
+                  "type": "string"
+              }
           },
-          "uuid": {
-            "type": "string"
-          }
-        }
+          "required": [
+              "id",
+              "type"
+          ],
+          "type": "object"
       }
-    }
-  }
+  },
+  "required": [
+      "credentialSubject",
+      "@context",
+      "id",
+      "issuanceDate",
+      "issuer",
+      "type",
+      "credentialSchema"
+  ],
+  "type": "object"
+}
