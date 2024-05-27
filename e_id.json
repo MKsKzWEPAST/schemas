@@ -54,7 +54,10 @@
             "required": [
                 "first_name",
                 "last_name",
-                "email"
+                "email",
+                "phone",
+                "core_access",
+                "extended_access"
             ],
             "type": "object"
         },
