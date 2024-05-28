@@ -5,11 +5,11 @@
             "@version": 1.1,
             "id": "@id",
             "type": "@type",
-            "KYC": {
+            "eID": {
                 "@context": {
                     "@propagate": true,
                     "@protected": true,
-                    "polygon-vocab": "urn:uuid:f8286e53-8aad-4c7d-b854-b5633eaf2d9d#",
+                    "polygon-vocab": "urn:uuid:5f1641aa-75ea-400f-9979-ab1930105b3b#",
                     "xsd": "http://www.w3.org/2001/XMLSchema#",
                     "first_name": {
                         "@id": "polygon-vocab:first_name",
@@ -18,6 +18,10 @@
                     "last_name": {
                         "@id": "polygon-vocab:last_name",
                         "@type": "xsd:string"
+                    },
+                    "birthdate": {
+                        "@id": "polygon-vocab:birthdate",
+                        "@type": "xsd:integer"
                     },
                     "email": {
                         "@id": "polygon-vocab:email",
@@ -36,7 +40,7 @@
                         "@type": "xsd:string"
                     }
                 },
-                "@id": "urn:uuid:baf29433-c5be-4aef-9072-0fa6940e8488"
+                "@id": "urn:uuid:d50f040e-4601-4432-97ca-bc58ab7a7abd"
             }
         }
     ]

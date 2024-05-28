@@ -1,69 +1,33 @@
 {
     "$metadata": {
         "uris": {
-            "jsonLdContext": "https://example.com/path/to/file/context.jsonld"
+            "jsonLdContext": "https://raw.githubusercontent.com/MKsKzWEPAST/schemas/main/s1.jsonld"
         },
         "version": "1.0",
-        "type": "eID"
+        "type": "s1UUID"
     },
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "description": "Your official Secutix digital identity, letting you rise above bots.",
-    "title": "e-ID credential",
+    "description": "Credential to refer an external UUID.",
+    "title": "s1UUID",
     "properties": {
         "credentialSubject": {
             "description": "Stores the data of the credential",
             "title": "Credential subject",
             "properties": {
-                "first_name": {
-                    "description": "E.g. John",
-                    "title": "First name",
-                    "type": "string"
-                },
-                "last_name": {
-                    "description": "E.g. Smith",
-                    "title": "Last name",
-                    "type": "string"
-                },
-                "birthdate": {
-                    "description": "Date of birth in format YYYYMMDD.",
-                    "title": "Date of birth",
-                    "type": "integer"
-                },
-                "email": {
-                    "description": "Email of the user",
-                    "title": "Email",
-                    "type": "string"
-                },
-                "phone": {
-                    "description": "Phone number of the user",
-                    "title": "Phone number",
-                    "type": "string"
-                },
-                "core_access": {
-                    "description": "Access token for core ticketing services",
-                    "title": "Core access",
-                    "type": "string"
-                },
-                "extended_access": {
-                    "description": "Access token for all ticketing services",
-                    "title": "Extended access",
-                    "type": "string"
-                },
                 "id": {
                     "description": "Stores the DID of the subject that owns the credential",
                     "title": "Credential subject ID",
                     "format": "uri",
                     "type": "string"
+                },
+                "uuid": {
+                    "description": "The uuid property refers to an external resource.",
+                    "title": "uuid",
+                    "type": "string"
                 }
             },
             "required": [
-                "first_name",
-                "last_name",
-                "birthdate",
-                "email",
-                "phone",
-                "core_access",
-                "extended_access"
+                "uuid"
             ],
             "type": "object"
         },
