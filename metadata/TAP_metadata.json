@@ -1,0 +1,13 @@
+{
+  "title": "TAP",
+  "description": "Fan certificate",
+  "issuerName": "Sample Issuer",
+  "titleTextColor": "#d4154e",
+  "descriptionTextColor": "#e85f88",
+  "issuerTextColor": "#d4154e",
+  "backgroundImageUrl": "https://github.com/MKsKzWEPAST/schemas/raw/main/assets/TAP_background.png",
+  "logo": {
+    "uri": "ipfs://QmWkSgmHbKRfhndWqHwVgfVpZSrWNiWZMTHb6k5KxY8ySc",
+    "alt": "Logo Issuer"
+  }
+}

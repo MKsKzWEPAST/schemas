@@ -1,13 +1,13 @@
 {
-  "title": "TAP",
-  "description": "Fan certificate",
+  "title": "e-ID",
+  "description": "Identity Claim",
   "issuerName": "Sample Issuer",
   "titleTextColor": "#d4154e",
   "descriptionTextColor": "#e85f88",
   "issuerTextColor": "#d4154e",
-  "backgroundImageUrl": "https://i.ibb.co/WNhgvWJ/background.png",
+  "backgroundImageUrl": "https://github.com/MKsKzWEPAST/schemas/raw/main/assets/ID_background.png",
   "logo": {
     "uri": "ipfs://QmWkSgmHbKRfhndWqHwVgfVpZSrWNiWZMTHb6k5KxY8ySc",
-    "alt": "Logo PolygonID Issuer"
+    "alt": "Logo Issuer"
   }
 }
