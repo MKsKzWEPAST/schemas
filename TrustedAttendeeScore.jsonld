@@ -1,0 +1,27 @@
+{
+    "@context": [
+        {
+            "@protected": true,
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "tapScore": {
+                "@context": {
+                    "@propagate": true,
+                    "@protected": true,
+                    "polygon-vocab": "urn:uuid:c98bbbc4-f70f-4c4f-905a-7f0c2e02243e#",
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "tap_id": {
+                        "@id": "polygon-vocab:tap_id",
+                        "@type": "xsd:string"
+                    },
+                    "score": {
+                        "@id": "polygon-vocab:score",
+                        "@type": "xsd:integer"
+                    }
+                },
+                "@id": "urn:uuid:9a6f76f6-c11a-4fc6-b34f-6c7d9a704980"
+            }
+        }
+    ]
+}
